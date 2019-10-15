@@ -21,7 +21,7 @@ def calcola_risultato(tiro):
            vincente=8
            return vincente,somma
            break
-      elif(tiro.count(i) == 4):
+      if(tiro.count(i) == 4):
            #print('Hai quattro ' +str(i))
            numero=i
            print(numero)
@@ -29,29 +29,29 @@ def calcola_risultato(tiro):
            vincente=7
            return vincente,somma
            break
-      elif(tiro.count(i) == 3):
+      if(tiro.count(i) == 3):
            tre=1
            tris=i
-      elif(tiro.count(i) == 2):
+      if(tiro.count(i) == 2):
            due+=1
            coppia=i
       if tre==1 and due==0:
            #print('Hai un tris di ' + str(tris))
            vincente=3
            somma=i*3
-      elif tre==1 and due==1:
+      if tre==1 and due==1:
           # print('Hai un full')
            somma=(tris*3)+(coppia*2)
            vincente=6
            return vincente,somma
            break
-      elif due==1:
+      if due==1:
            #print('Hai una coppia di ' +str(coppia))
            numero=i
            print(numero)
            somma=numero*2
            vincente=1
-      elif due==2:
+      if due==2:
           # print('Hai una doppia coppia')
            vincente=2
       if (tiro[0]==1 and tiro[1]==2 and tiro[2]==3 and tiro[3]==4 and tiro[4]==5):
