@@ -13,15 +13,16 @@ def calcola_risultato(tiro):
    due=0
    tre=0
    for i in range(1,7):
-       somma=somma+int(tiro.count(i))
        valore.append(tiro.count(i))
        if (tiro.count(i) == 5):
            #print('Hai cinque ' +str(i))
+           somma=i*5
            vincente=8
            return vincente,somma
            break
        elif(tiro.count(i) == 4):
            #print('Hai quattro ' +str(i))
+           somma=i*4
            vincente=7
            return vincente,somma
            break
