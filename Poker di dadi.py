@@ -122,13 +122,8 @@ while True:
 
            #aggiungo commento per la sincronizzazione di Github.
     elif scelta=='n' or scelta=='N':
-
         print('grazie per aver giocato al poker di dadi')
-
         break
-
     else:
-
         print('Inserisci o S per giocare ancora o N per uscire')
-
         continue
