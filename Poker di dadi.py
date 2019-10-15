@@ -101,6 +101,25 @@ while True:
         tiroa.sort()
         print('Questo è il tiro del tuo avversario')
         print(tiroa)
+        if vincente==0:
+            print('Il tuo avversario non ha ottenuto nulla')
+        elif vincente==1:
+            print('Il tuo avversario ha una coppia')
+
+        elif vincente==2:
+            print('Il tuo avversario ha una doppia coppia')
+        elif vincente==3:
+            print('Il tuo avversario ha un tris')
+        elif vincente==4:
+            print('Il tuo avversario ha una scala di 5')
+        elif vincente==5:
+            print('Il tuo avversario ha una scala di 6')
+        elif vincente==6:
+            print('Il tuo avversario ha un full')
+        elif vincente==7:
+            print('Il tuo avversario ha 4 dadi uguali')
+        elif vincente==8:
+            print('Il tuo avversario ha 5 dadi uguali, spera nella tua buona stella')
         #conteggio valori avversario
 
         vincentea,sommaa=calcola_risultato(tiroa)
