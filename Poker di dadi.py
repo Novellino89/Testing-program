@@ -30,9 +30,13 @@ def calcola_risultato(tiro):
            return vincente,somma
            break
       if(tiro.count(i) == 3):
+           numero=i
+           print(numero)
            tre=1
            tris=i
       if(tiro.count(i) == 2):
+           numero=i
+           print(numero)
            due+=1
            coppia=i
       if tre==1 and due==0:
