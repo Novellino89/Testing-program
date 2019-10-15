@@ -13,16 +13,17 @@ def calcola_risultato(tiro):
    due=0
    tre=0
    for i in range(1,7):
-       valore.append(tiro.count(i))
        if (tiro.count(i) == 5):
            #print('Hai cinque ' +str(i))
-           somma=i*5
+           numero=i
+           somma=numero*5
            vincente=8
            return vincente,somma
            break
        elif(tiro.count(i) == 4):
            #print('Hai quattro ' +str(i))
-           somma=i*4
+           numero=i
+           somma=numero*4
            vincente=7
            return vincente,somma
            break
@@ -44,7 +45,8 @@ def calcola_risultato(tiro):
            break
        elif due==1:
            #print('Hai una coppia di ' +str(coppia))
-           somma=i*2
+           numero=i
+           somma=numero*2
            vincente=1
        elif due==2:
           # print('Hai una doppia coppia')
