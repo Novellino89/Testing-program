@@ -18,12 +18,12 @@ def calcola_risultato(tiro):
        if (tiro.count(i) == 5):
            #print('Hai cinque ' +str(i))
            vincente=8
-           return vincente
+           return vincente,somma
            break
        elif(tiro.count(i) == 4):
            #print('Hai quattro ' +str(i))
            vincente=7
-           return vincente
+           return vincente,somma
            break
        elif(tiro.count(i) == 3):
            tre=1
@@ -37,7 +37,7 @@ def calcola_risultato(tiro):
        elif tre==1 and due==1:
           # print('Hai un full')
            vincente=6
-           return vincente
+           return vincente,somma
            break
        elif due==1:
            #print('Hai una coppia di ' +str(coppia))
@@ -48,14 +48,14 @@ def calcola_risultato(tiro):
        if (tiro[0]==1 and tiro[1]==2 and tiro[2]==3 and tiro[3]==4 and tiro[4]==5):
            #print('Hai effettuato una scala di 5!')
            vincente=4
-           return vincente
+           return vincente,somma
            break
        elif (tiro[0]==2 and tiro[1]==3 and tiro[2]==4 and tiro[3]==5 and tiro[4]==6):
            #print('Hai effettuato una scala di 6!')
            vincente=5
-           return vincente
+           return vincente,somma
            break
-   return vincente
+   return vincente,somma
 
 #Inizio programma
 while True:
@@ -74,7 +74,7 @@ while True:
         tiro.sort()
         print(tiro)
         #conteggio alori
-        vincente=calcola_risultato(tiro)
+        vincente,somma=calcola_risultato(tiro)
         if vincente==0:
             print('purtroppo il tuo lancio non vale nulla')
         elif vincente==1:
@@ -102,7 +102,7 @@ while True:
         print(tiroa)
         #conteggio valori avversario
 
-        vincentea=calcola_risultato(tiroa)
+        vincentea,sommaa=calcola_risultato(tiroa)
 
         if vincente>vincentea:
 
@@ -113,15 +113,14 @@ while True:
             print('Peccato, hai perso!')
 
         else:
-
-            print('Il punteggio è in parità, ma non sono ancora in grado di dire chi ha vinto. Puoi controllare tu?')
+            if somma>sommaa:
+                    print('Congratulazioni, hai vinto!')
+            elif somma<sommaa:
+                    print('Peccato, hai perso!')
+            else:
+                print('Il punteggio è finito in parità, è molto raro ma può capitare. Giocate ancora per spareggiare.')
 
            #aggiungo commento per la sincronizzazione di Github.
-
-
-
-
-
     elif scelta=='n' or scelta=='N':
 
         print('grazie per aver giocato al poker di dadi')
