@@ -13,50 +13,53 @@ def calcola_risultato(tiro):
    due=0
    tre=0
    for i in range(1,7):
-       if (tiro.count(i) == 5):
+      if (tiro.count(i) == 5):
            #print('Hai cinque ' +str(i))
            numero=i
+           print(numero)
            somma=numero*5
            vincente=8
            return vincente,somma
            break
-       elif(tiro.count(i) == 4):
+      elif(tiro.count(i) == 4):
            #print('Hai quattro ' +str(i))
            numero=i
+           print(numero)
            somma=numero*4
            vincente=7
            return vincente,somma
            break
-       elif(tiro.count(i) == 3):
+      elif(tiro.count(i) == 3):
            tre=1
            tris=i
-       elif(tiro.count(i) == 2):
+      elif(tiro.count(i) == 2):
            due+=1
            coppia=i
-       if tre==1 and due==0:
+      if tre==1 and due==0:
            #print('Hai un tris di ' + str(tris))
            vincente=3
            somma=i*3
-       elif tre==1 and due==1:
+      elif tre==1 and due==1:
           # print('Hai un full')
            somma=(tris*3)+(coppia*2)
            vincente=6
            return vincente,somma
            break
-       elif due==1:
+      elif due==1:
            #print('Hai una coppia di ' +str(coppia))
            numero=i
+           print(numero)
            somma=numero*2
            vincente=1
-       elif due==2:
+      elif due==2:
           # print('Hai una doppia coppia')
            vincente=2
-       if (tiro[0]==1 and tiro[1]==2 and tiro[2]==3 and tiro[3]==4 and tiro[4]==5):
+      if (tiro[0]==1 and tiro[1]==2 and tiro[2]==3 and tiro[3]==4 and tiro[4]==5):
            #print('Hai effettuato una scala di 5!')
            vincente=4
            return vincente,somma
            break
-       elif (tiro[0]==2 and tiro[1]==3 and tiro[2]==4 and tiro[3]==5 and tiro[4]==6):
+      elif (tiro[0]==2 and tiro[1]==3 and tiro[2]==4 and tiro[3]==5 and tiro[4]==6):
            #print('Hai effettuato una scala di 6!')
            vincente=5
            return vincente,somma
