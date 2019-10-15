@@ -35,8 +35,10 @@ def calcola_risultato(tiro):
        if tre==1 and due==0:
            #print('Hai un tris di ' + str(tris))
            vincente=3
+           somma=i*3
        elif tre==1 and due==1:
           # print('Hai un full')
+           somma=(tris*3)+(coppia*2)
            vincente=6
            return vincente,somma
            break
