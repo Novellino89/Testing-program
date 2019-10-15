@@ -13,7 +13,7 @@ def calcola_risultato(tiro):
    due=0
    tre=0
    for i in range(1,7):
-       somma=+valore.append(tiro.count(i))
+       somma=somma+int(tiro.count(i))
        valore.append(tiro.count(i))
        if (tiro.count(i) == 5):
            #print('Hai cinque ' +str(i))
@@ -73,7 +73,7 @@ while True:
             tiro.append(tira())
         tiro.sort()
         print(tiro)
-        #conteggio alori
+        #conteggio valori
         vincente,somma=calcola_risultato(tiro)
         if vincente==0:
             print('purtroppo il tuo lancio non vale nulla')
