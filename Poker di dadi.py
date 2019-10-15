@@ -54,7 +54,7 @@ def calcola_risultato(tiro):
            return vincente
            break
    return vincente
-  
+
 #Inizio programma
 while True:
     #inizializzazione liste
@@ -114,11 +114,11 @@ while True:
 
             print('Il punteggio è in parità, ma non sono ancora in grado di dire chi ha vinto. Puoi controllare tu?')
 
-           
+           #aggiungo commento per la sincronizzazione di Github.
 
-     
 
-        
+
+
 
     elif scelta=='n' or scelta=='N':
 
