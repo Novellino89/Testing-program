@@ -44,6 +44,7 @@ def calcola_risultato(tiro):
            break
        elif due==1:
            #print('Hai una coppia di ' +str(coppia))
+           somma=i*2
            vincente=1
        elif due==2:
           # print('Hai una doppia coppia')
@@ -103,38 +104,43 @@ while True:
         tiroa.sort()
         print('Questo è il tiro del tuo avversario')
         print(tiroa)
-        if vincente==0:
-            print('Il tuo avversario non ha ottenuto nulla')
-        elif vincente==1:
-            print('Il tuo avversario ha una coppia')
 
-        elif vincente==2:
-            print('Il tuo avversario ha una doppia coppia')
-        elif vincente==3:
-            print('Il tuo avversario ha un tris')
-        elif vincente==4:
-            print('Il tuo avversario ha una scala di 5')
-        elif vincente==5:
-            print('Il tuo avversario ha una scala di 6')
-        elif vincente==6:
-            print('Il tuo avversario ha un full')
-        elif vincente==7:
-            print('Il tuo avversario ha 4 dadi uguali')
-        elif vincente==8:
-            print('Il tuo avversario ha 5 dadi uguali, spera nella tua buona stella')
         #conteggio valori avversario
 
         vincentea,sommaa=calcola_risultato(tiroa)
+        if vincentea==0:
+            print('Il tuo avversario non ha ottenuto nulla')
+        elif vincentea==1:
+            print('Il tuo avversario ha una coppia')
+
+        elif vincentea==2:
+            print('Il tuo avversario ha una doppia coppia')
+        elif vincentea==3:
+            print('Il tuo avversario ha un tris')
+        elif vincentea==4:
+            print('Il tuo avversario ha una scala di 5')
+        elif vincentea==5:
+            print('Il tuo avversario ha una scala di 6')
+        elif vincentea==6:
+            print('Il tuo avversario ha un full')
+        elif vincentea==7:
+            print('Il tuo avversario ha 4 dadi uguali')
+        elif vincentea==8:
+            print('Il tuo avversario ha 5 dadi uguali, spera nella tua buona stella')
 
         if vincente>vincentea:
-
+            print(somma)
+            print(sommaa)
             print('Congratulazioni, hai vinto!')
 
         elif vincente<vincentea:
-
+            print(somma)
+            print(sommaa)
             print('Peccato, hai perso!')
 
         else:
+            print(somma)
+            print(sommaa)
             if somma>sommaa:
                     print('Congratulazioni, hai vinto!')
             elif somma<sommaa:
