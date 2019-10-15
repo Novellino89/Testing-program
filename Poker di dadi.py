@@ -7,11 +7,13 @@ def tira():
 def calcola_risultato(tiro):
    coppia=0
    tris=0
+   somma=0
    vincente=0
    valore=[]
    due=0
    tre=0
    for i in range(1,7):
+       somma=+valore.append(tiro.count(i))
        valore.append(tiro.count(i))
        if (tiro.count(i) == 5):
            #print('Hai cinque ' +str(i))
