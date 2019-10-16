@@ -10,6 +10,7 @@ def calcola_risultato(tiro):
    somma=0
    vincente=0
    checkcoppia=0
+   checktris=0
    due=0
    tre=0
 
@@ -38,11 +39,12 @@ def calcola_risultato(tiro):
            print(numero)
            due+=1
            coppia=i
-      if tre==1 and due==0:
+      if tre==1 and due==0 and checktris==0:
            #print('Hai un tris di ' + str(tris))
+           checktris=1
            vincente=3
            somma=i*3
-      if tre==1 and due==1:
+      if tre==1 and due==1 and checktris==1:
           # print('Hai un full')
            somma=(tris*3)+(coppia*2)
            vincente=6
