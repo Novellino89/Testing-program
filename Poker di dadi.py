@@ -9,7 +9,7 @@ def calcola_risultato(tiro):
    tris=0
    somma=0
    vincente=0
-   valore=[]
+   checkcoppia=0
    due=0
    tre=0
 
@@ -48,13 +48,14 @@ def calcola_risultato(tiro):
            vincente=6
            return vincente,somma
            break
-      if due==1:
+      if due==1 and checkcoppia==0:
            #print('Hai una coppia di ' +str(coppia))
+           checkcoppia=1
            numero=i
            print(numero)
            somma=numero*2
            vincente=1
-      if due==2:
+      if due==2 and checkcoppia=1:
           # print('Hai una doppia coppia')
            vincente=2
            return vincente,somma
