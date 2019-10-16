@@ -57,6 +57,8 @@ def calcola_risultato(tiro):
       if due==2:
           # print('Hai una doppia coppia')
            vincente=2
+           return vincente,somma
+           break
       if (tiro[0]==1 and tiro[1]==2 and tiro[2]==3 and tiro[3]==4 and tiro[4]==5):
             #print('Hai effettuato una scala di 5!')
             vincente=4
