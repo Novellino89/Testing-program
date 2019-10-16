@@ -17,7 +17,6 @@ def calcola_risultato(tiro):
            #print('Hai cinque ' +str(i))
            numero=i
            #print(numero)
-
            somma=numero*5
            vincente=8
            return vincente,somma
