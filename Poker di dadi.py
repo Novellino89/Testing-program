@@ -12,23 +12,31 @@ def calcola_risultato(tiro):
    valore=[]
    due=0
    tre=0
+   if (tiro[0]==1 and tiro[1]==2 and tiro[2]==3 and tiro[3]==4 and tiro[4]==5):
+         #print('Hai effettuato una scala di 5!')
+         vincente=4
+         return vincente,somma
+         break
+   elif (tiro[0]==2 and tiro[1]==3 and tiro[2]==4 and tiro[3]==5 and tiro[4]==6):
+         #print('Hai effettuato una scala di 6!')
+         vincente=5
+         return vincente,somma
+         break
    for i in range(1,7):
       if (tiro.count(i) == 5):
-           #print('Hai cinque ' +str(i))
-           numero=i
-           #print(numero)
-           somma=numero*5
+               numero=i
+               #print(numero)
+               somma=numero*5
            vincente=8
            return vincente,somma
            break
       if(tiro.count(i) == 4):
-           #print('Hai quattro ' +str(i))
-           numero=i
-           print(numero)
-           somma=numero*4
-           vincente=7
-           return vincente,somma
-           break
+             numero=i
+             #print(numero)
+             somma=numero*4
+          vincente=7
+          return vincente,somma
+          break
       if(tiro.count(i) == 3):
            numero=i
            print(numero)
@@ -58,16 +66,7 @@ def calcola_risultato(tiro):
       if due==2:
           # print('Hai una doppia coppia')
            vincente=2
-      if (tiro[0]==1 and tiro[1]==2 and tiro[2]==3 and tiro[3]==4 and tiro[4]==5):
-           #print('Hai effettuato una scala di 5!')
-           vincente=4
-           return vincente,somma
-           break
-      elif (tiro[0]==2 and tiro[1]==3 and tiro[2]==4 and tiro[3]==5 and tiro[4]==6):
-           #print('Hai effettuato una scala di 6!')
-           vincente=5
-           return vincente,somma
-           break
+
    return vincente,somma
 
 #Inizio programma
