@@ -72,7 +72,7 @@ def calcola_risultato(tiro):
    return vincente,somma
 #Inizio programma
 while True:
-    print ’\n’ * 100
+    print (’\n’ * 100)
     #inizializzazione liste
     tiroa=[]
     tiro=[]
