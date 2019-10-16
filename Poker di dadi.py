@@ -141,18 +141,12 @@ while True:
             print('Il tuo avversario ha 5 dadi uguali, spera nella tua buona stella')
 
         if vincente>vincentea:
-            print(somma)
-            print(sommaa)
             print('Congratulazioni, hai vinto!')
 
         elif vincente<vincentea:
-            print(somma)
-            print(sommaa)
             print('Peccato, hai perso!')
 
         else:
-            print(somma)
-            print(sommaa)
             if somma>sommaa:
                     print('Congratulazioni, hai vinto!')
             elif somma<sommaa:
