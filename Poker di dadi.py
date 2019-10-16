@@ -31,12 +31,12 @@ def calcola_risultato(tiro):
             break
       if(tiro.count(i) == 3):
            numero=i
-           print(numero)
+
            tre=1
            tris=i
       if(tiro.count(i) == 2):
            numero=i
-           print(numero)
+
            due+=1
            coppia=i
       if tre==1 and due==0 and checktris==0:
@@ -54,7 +54,6 @@ def calcola_risultato(tiro):
            #print('Hai una coppia di ' +str(coppia))
            checkcoppia=1
            numero=i
-           print(numero)
            somma=numero*2
            vincente=1
       if due==2 and checkcoppia==1:
