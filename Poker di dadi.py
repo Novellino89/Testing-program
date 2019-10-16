@@ -9,27 +9,28 @@ def calcola_risultato(tiro):
    tris=0
    somma=0
    vincente=0
-   valore=[]
+   valore=0
    due=0
    tre=0
    for i in range(1,7):
       if (tiro.count(i) == 5):
-           #print('Hai cinque ' +str(i))
-           numero=i
-           #print(numero)
-
-           somma=numero*5
+           valore=1
+           if valore==1:
+               numero=i
+               #print(numero)
+               somma=numero*5
            vincente=8
            return vincente,somma
            break
       if(tiro.count(i) == 4):
-           #print('Hai quattro ' +str(i))
-           numero=i
-           print(numero)
-           somma=numero*4
-           vincente=7
-           return vincente,somma
-           break
+          valore=1
+          if valore==1:
+             numero=i
+             #print(numero)
+             somma=numero*4
+          vincente=7
+          return vincente,somma
+          break
       if(tiro.count(i) == 3):
            numero=i
            print(numero)
@@ -51,11 +52,12 @@ def calcola_risultato(tiro):
            return vincente,somma
            break
       if due==1:
-           #print('Hai una coppia di ' +str(coppia))
-           numero=i
-           print(numero)
-           somma=numero*2
-           vincente=1
+          valore=1
+          if valore==1:
+              numero=i
+              #print(numero)
+              somma=numero*2
+          vincente=1
       if due==2:
           # print('Hai una doppia coppia')
            vincente=2
