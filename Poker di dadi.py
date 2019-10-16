@@ -55,7 +55,7 @@ def calcola_risultato(tiro):
            print(numero)
            somma=numero*2
            vincente=1
-      if due==2 and checkcoppia=1:
+      if due==2 and checkcoppia==1:
           # print('Hai una doppia coppia')
            vincente=2
            return vincente,somma
