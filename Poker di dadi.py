@@ -149,7 +149,6 @@ while True:
             print(somma)
             print(sommaa)
             print('Peccato, hai perso!')
-
         else:
             print(somma)
             print(sommaa)
