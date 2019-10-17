@@ -1,4 +1,7 @@
 import random as r
+import os
+
+
 #creazione funzione tira
 def tira():
     a=r.randint(1,6)
@@ -72,7 +75,7 @@ def calcola_risultato(tiro):
    return vincente,somma
 #Inizio programma
 while True:
-    print (’\n’ * 100)
+    #print (’\n’ * 100)
     #inizializzazione liste
     tiroa=[]
     tiro=[]
@@ -82,6 +85,7 @@ while True:
     except:
         print('Inserisci o S per giocare ancora o N per uscire')
     if scelta=='s' or scelta=='S':
+        os.system('cls')
         #lancio dei dadi e ordinamento
         for i in range(5):
             tiro.append(tira())
