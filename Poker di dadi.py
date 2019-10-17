@@ -39,6 +39,7 @@ def calcola_risultato(tiro):
            numero=i
            due+=1
            coppia=i
+           #Se trova prima una coppia e poi un tris il programma si blocca e vede solo la coppia.
       if tre==1 and due==0 and checktris==0:
            #print('Hai un tris di ' + str(tris))
            checktris=1
