@@ -39,7 +39,6 @@ def calcola_risultato(tiro):
            numero=i
            due+=1
            coppia=i
-           #Se trova prima una coppia e poi un tris il programma si blocca e vede solo la coppia.
       if tre==1 and checktris==0:
            #print('Hai un tris di ' + str(tris))
            checktris=1
@@ -92,6 +91,23 @@ while True:
             tiro.append(tira())
         tiro.sort()
         print(tiro)
+        try:
+            scelta1=input('Vuoi Ritirare qualche dado? ')
+        except:
+            print('Inserisci o S per ritirare o N per per continuare.')
+        if scelta1=='s' or scelta1=='S':
+                # taking multiple inputs at a time
+            try:
+                sostituisci = [int(x) for x in input("Che dadi vuoi ritirare?: ").split()]
+                print("I dadi che vuoi ritirare sono: ", sostituisci)
+            except:
+                    print('Inserisci per favore almeno un valore numerico.')
+            for item in range(0,len(sostituisci)):
+                if sostituisci[item] in tiro:
+                    tiro[tiro.index(sostituisci[item])]=tira()
+
+            print('il tuo nuovo tiro è ' )
+            print(tiro)
         #conteggio valori
         vincente,somma=calcola_risultato(tiro)
         if vincente==0:
@@ -112,24 +128,8 @@ while True:
             print('Hai ottenuto 4 dadi uguali')
         elif vincente==8:
             print('Hai ottenuto 5 dadi uguali, è strabiliante')
-        try:
-            scelta1=input('Vuoi Ritirare qualche dado? ')
-        except:
-            print('Inserisci o S per ritirare o N per per continuare.')
-        if scelta1=='s' or scelta1=='S':
-            # taking multiple inputs at a time
-            try:
-                sostituisci = [int(x) for x in input("Che dadi vuoi ritirare?: ").split()]
-                print("I dadi che vuoi ritirare sono: ", sostituisci)
-                print(len(sostituisci))
-                if sostituisci in tiro:
-                    #for x in len(sostituisci)
-                        #tiro.index(x)=tira()
-                        print('il tuo nuovo tiro è ' )
-                print('il tuo nuovo tiro è ' )
-                print(tiro)
-            except:
-                print('Inserisci per favore almeno un valore numerico.')
+
+
                 #print('che dado vuoi ritirare?')
             #print('')
 
