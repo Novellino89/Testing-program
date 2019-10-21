@@ -119,10 +119,13 @@ while True:
         if scelta1=='s' or scelta1=='S':
             # taking multiple inputs at a time
             try:
-                x = [int(x) for x in input("Che dadi vuoi ritirare?: ").split()]
-                print("I dadi che vuoi ritirare sono: ", x)
-                if x in tiro:
-                    tiro.index(x)=tira()
+                sostituisci = [int(x) for x in input("Che dadi vuoi ritirare?: ").split()]
+                print("I dadi che vuoi ritirare sono: ", sostituisci)
+                if sostituisci in tiro:
+                    for x in sostituisci
+                        tiro.index(x)=tira()
+                print('il tuo nuovo tiro è ' )
+                print(tiro)
             except:
                 print('Inserisci per favore almeno un valore numerico.')
                 #print('che dado vuoi ritirare?')
