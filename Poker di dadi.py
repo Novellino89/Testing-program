@@ -121,6 +121,8 @@ while True:
             try:
                 x = [int(x) for x in input("Che dadi vuoi ritirare?: ").split()]
                 print("I dadi che vuoi ritirare sono: ", x)
+                if x in tiro:
+                    tiro.index(x)=tira()
             except:
                 print('Inserisci per favore almeno un valore numerico.')
                 #print('che dado vuoi ritirare?')
