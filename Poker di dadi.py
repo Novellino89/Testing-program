@@ -113,10 +113,10 @@ while True:
         elif vincente==8:
             print('Hai ottenuto 5 dadi uguali, è strabiliante')
         try:
-            scelta=input('Vuoi Ritirare qualche dado? ')
+            scelta1=input('Vuoi Ritirare qualche dado? ')
         except:
             print('Inserisci o S per ritirare o N per per continuare.')
-        if scelta=='s' or scelta=='S':
+        if scelta1=='s' or scelta1=='S':
             # taking multiple inputs at a time
             try:
                 x = [int(x) for x in input("Che dadi vuoi ritirare?: ").split()]
@@ -125,46 +125,44 @@ while True:
                 print('Inserisci per favore almeno un valore numerico.')
                 #print('che dado vuoi ritirare?')
             #print('')
-        elif scelta=='n' or scelta=='N':
 
-        #lancio dei dadi e ordinamento del tuo avversario
-            for i in range(5):
-                tiroa.append(tira())
-            tiroa.sort()
-            print('Questo è il tiro del tuo avversario')
-            print(tiroa)
-            #conteggio valori avversario
-            vincentea,sommaa=calcola_risultato(tiroa)
-            if vincentea==0:
-                print('Il tuo avversario non ha ottenuto nulla')
-            elif vincentea==1:
-                print('Il tuo avversario ha una coppia')
-            elif vincentea==2:
-                print('Il tuo avversario ha una doppia coppia')
-            elif vincentea==3:
-                print('Il tuo avversario ha un tris')
-            elif vincentea==4:
-                print('Il tuo avversario ha una scala di 5')
-            elif vincentea==5:
-                print('Il tuo avversario ha una scala di 6')
-            elif vincentea==6:
-                print('Il tuo avversario ha un full')
-            elif vincentea==7:
-                print('Il tuo avversario ha 4 dadi uguali')
-            elif vincentea==8:
-                print('Il tuo avversario ha 5 dadi uguali, spera nella tua buona stella')
-            if vincente>vincentea:
-                print('Congratulazioni, hai vinto!')
-            elif vincente<vincentea:
-                print('Peccato, hai perso!')
+        for i in range(5):
+            tiroa.append(tira())
+        tiroa.sort()
+        print('Questo è il tiro del tuo avversario')
+        print(tiroa)
+        #conteggio valori avversario
+        vincentea,sommaa=calcola_risultato(tiroa)
+        if vincentea==0:
+            print('Il tuo avversario non ha ottenuto nulla')
+        elif vincentea==1:
+            print('Il tuo avversario ha una coppia')
+        elif vincentea==2:
+            print('Il tuo avversario ha una doppia coppia')
+        elif vincentea==3:
+            print('Il tuo avversario ha un tris')
+        elif vincentea==4:
+            print('Il tuo avversario ha una scala di 5')
+        elif vincentea==5:
+            print('Il tuo avversario ha una scala di 6')
+        elif vincentea==6:
+            print('Il tuo avversario ha un full')
+        elif vincentea==7:
+            print('Il tuo avversario ha 4 dadi uguali')
+        elif vincentea==8:
+            print('Il tuo avversario ha 5 dadi uguali, spera nella tua buona stella')
+        if vincente>vincentea:
+            print('Congratulazioni, hai vinto!')
+        elif vincente<vincentea:
+            print('Peccato, hai perso!')
+        else:
+            if somma>sommaa:
+                    print('Congratulazioni, hai vinto!')
+            elif somma<sommaa:
+                    print('Peccato, hai perso!')
             else:
-                if somma>sommaa:
-                        print('Congratulazioni, hai vinto!')
-                elif somma<sommaa:
-                        print('Peccato, hai perso!')
-                else:
-                    print('Il punteggio è finito in parità, è molto raro ma può capitare. Giocate ancora per spareggiare.')
-               #aggiungo commento per la sincronizzazione di Github.
+                print('Il punteggio è finito in parità, è molto raro ma può capitare. Giocate ancora per spareggiare.')
+              #aggiungo commento per la sincronizzazione di Github.
     elif scelta=='n' or scelta=='N':
         print('grazie per aver giocato al poker di dadi')
         break
