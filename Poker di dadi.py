@@ -112,6 +112,15 @@ while True:
             print('Hai ottenuto 4 dadi uguali')
         elif vincente==8:
             print('Hai ottenuto 5 dadi uguali, è strabiliante')
+        try:
+            scelta=input('Vuoi Ritirare qualche dado? ')
+        except:
+            print('Inserisci o S per ritirare o N per per continuare.')
+        if scelta=='s' or scelta=='S':
+            print('che dado vuoi ritirare?')
+            #istruzioni della scelta
+        else:
+
         #lancio dei dadi e ordinamento del tuo avversario
         for i in range(5):
             tiroa.append(tira())
