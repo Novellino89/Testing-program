@@ -121,9 +121,11 @@ while True:
             try:
                 sostituisci = [int(x) for x in input("Che dadi vuoi ritirare?: ").split()]
                 print("I dadi che vuoi ritirare sono: ", sostituisci)
+                print(len(sostituisci))
                 if sostituisci in tiro:
-                    for x in sostituisci
-                        tiro.index(x)=tira()
+                    #for x in len(sostituisci)
+                        #tiro.index(x)=tira()
+                        print('il tuo nuovo tiro è ' )
                 print('il tuo nuovo tiro è ' )
                 print(tiro)
             except:
