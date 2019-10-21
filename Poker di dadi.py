@@ -117,8 +117,11 @@ while True:
         except:
             print('Inserisci o S per ritirare o N per per continuare.')
         if scelta=='s' or scelta=='S':
-            print('che dado vuoi ritirare?')
-            #istruzioni della scelta
+            # taking multiple inputs at a time
+            x = [int(x) for x in input("Che dadi vuoi ritirare?: ").split()]
+            print("I dadi che vuoi ritirare sono: ", x)  
+            #print('che dado vuoi ritirare?')
+            #print('')
         else:
 
         #lancio dei dadi e ordinamento del tuo avversario
