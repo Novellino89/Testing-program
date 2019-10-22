@@ -110,16 +110,16 @@ while True:
     tiro=[]
     valore=[]
     try:
-        scelta=input('Vuoi giocare a poker di dadi? S/N ')
+        scelta=input('Vuoi giocare a poker di dadi? S/N \n ')
     except:
-        print('Inserisci o S per giocare ancora o N per uscire')
+        print('Inserisci o S per giocare ancora o N per uscire \n')
     if scelta=='s' or scelta=='S':
         os.system('cls')
         #lancio dei dadi e ordinamento
         for i in range(5):
             tiro.append(tira())
         tiro.sort()
-        print(tiro)
+        print(tiro,"\n")
         vincente,somma=calcola_risultato(tiro)
         Visualizza_Ottenuto(vincente,0)
         try:
