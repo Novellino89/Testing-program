@@ -130,6 +130,8 @@ while True:
             tiro.append(tira())
         tiro.sort()
         print(tiro)
+        vincente,somma=calcola_risultato(tiro)
+        Visualizza_Ottenuto(vincente,0)
         try:
             scelta1=input('Vuoi Ritirare qualche dado? ')
         except:
