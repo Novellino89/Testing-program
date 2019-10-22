@@ -128,7 +128,10 @@ while True:
         if denaro<=0:
             print('Non hai più soldi da scommettere e non possiamo più farti giocare. Ci spiace ma deve abbandonare l"edificio.')
             break
-
+        if denaroa<=0
+            print('Hai mandato sul lastrico il tuo avversario! Ma si sta avvicinando un"altra persona al tavolo.')
+            denaroa=r.randint(150,600)
+            continue
         puntata=input('\n Inserisci quanto vuoi scommettere per questa puntata ')
         puntata=int(puntata)
         if puntata>denaro:
@@ -137,9 +140,14 @@ while True:
         denaro-=puntata
         casuale=r.randint(1,2)
         if casuale==1:
-            print("l'avversario accetta la posta \n")
-            denaroa-=puntata
-            piatto=puntata*2
+            if denaroa<puntata:
+                print('Il tuo avversario accetta ma ha meno soldi della tua posta, mette tutto quello che ha.')
+                piatto=puntata+denaroa
+                denaroa=0
+            else:
+                print("l'avversario accetta la posta \n")
+                denaroa-=puntata
+                piatto=puntata*2
         elif casuale==2:
             puntatasuperiore=r.randint(1,60)
             print("l'avversario accetta e rilancia di altri", puntatasuperiore)
