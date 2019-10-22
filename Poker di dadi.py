@@ -2,6 +2,7 @@ import random as r
 import os
 #creazione funzione tira
 def tira():
+    random.seed()
     a=r.randint(1,6)
     return a
 #creazione funzione calcolo risultato
@@ -104,6 +105,7 @@ def Visualizza_Ottenuto(vincente,avversario):
 
 #Inizio programma
 while True:
+    ripetizione=0
     tiroa=[]
     tiro=[]
     valore=[]
