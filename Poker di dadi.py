@@ -123,6 +123,7 @@ while True:
     if scelta=='s' or scelta=='S':
         os.system('cls')
         puntata=input('\n Inserisci quanto vuoi scommettere per questa puntata ')
+        puntata=int(puntata)
         denaro-=puntata
         casuale=r.randint(1,2)
         if casuale==1:
