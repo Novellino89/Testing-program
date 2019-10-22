@@ -111,7 +111,9 @@ while True:
         denaroa=600
         print('Attualmente hai nel portafoglio' , denaro,'Euro')
         print('Il tuo avversario ha nel portafoglio',denaroa,'Euro')
-
+    else:
+        print('Attualmente hai nel portafoglio' , denaro,'Euro')
+        print('Il tuo avversario ha nel portafoglio',denaroa,'Euro')
     ripetizione=0
     tiroa=[]
     tiro=[]
