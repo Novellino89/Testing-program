@@ -112,7 +112,7 @@ while True:
         print('Attualmente hai nel portafoglio' , denaro,'Euro')
         print('Il tuo avversario ha nel portafoglio',denaroa,'Euro')
     else:
-        os.system('cls')
+
         print('Attualmente hai nel portafoglio' , denaro,'Euro')
         print('Il tuo avversario ha nel portafoglio',denaroa,'Euro')
     ripetizione=0
@@ -124,6 +124,7 @@ while True:
     except:
         print('Inserisci o S per giocare ancora o N per uscire \n')
     if scelta=='s' or scelta=='S':
+        os.system('cls')
         if denaro<=0:
             print('Non hai più soldi da scommettere e non possiamo più farti giocare. Ci spiace ma deve abbandonare l"edificio.')
             break
