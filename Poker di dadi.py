@@ -1,7 +1,5 @@
 import random as r
 import os
-
-
 #creazione funzione tira
 def tira():
     a=r.randint(1,6)
@@ -137,6 +135,7 @@ while True:
                 if sostituisci[item] in tiro:
                     tiro[tiro.index(sostituisci[item])]=tira()
             print('il tuo nuovo tiro è ' )
+            tiro.sort()
             print(tiro)
         #conteggio valori
         vincente,somma=calcola_risultato(tiro)
