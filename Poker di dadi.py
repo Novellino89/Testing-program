@@ -127,7 +127,7 @@ while True:
             scelta1=input('Vuoi Ritirare qualche dado? ')
         except:
             print('Inserisci o S per ritirare o N per per continuare.')
-        if scelta1=='s' or scelta1=='S':
+        if scelta1=='s' or scelta1=='S' or scelta1=='Si' or scelta1=='S ' or scelta1=='s ':
                 # taking multiple inputs at a time
             try:
                 sostituisci = [int(x) for x in input("\Che dadi vuoi ritirare?: ").split()]
