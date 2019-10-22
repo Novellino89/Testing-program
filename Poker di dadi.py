@@ -177,14 +177,14 @@ while True:
         if scelta1=='s' or scelta1=='S' or scelta1=='Si' or scelta1=='S ' or scelta1=='s ':
                 # taking multiple inputs at a time
             try:
-                sostituisci = [int(x) for x in input("\Che dadi vuoi ritirare?: ").split()]
+                sostituisci = [int(x) for x in input("Che dadi vuoi ritirare?: ").split()]
                 print("I dadi che vuoi ritirare sono: ", sostituisci,"\n")
             except:
                     print('Inserisci per favore almeno un valore numerico.')
             for item in range(0,len(sostituisci)):
                 if sostituisci[item] in tiro:
                     tiro[tiro.index(sostituisci[item])]=tira()
-            print('il tuo nuovo tiro è \n ' )
+            print('Il tuo nuovo tiro è \n ' )
             tiro.sort()
             print(tiro,"\n")
         if scelta1=='n' or scelta1=='N' or scelta1=='NO' or scelta1=='no' or scelta1=='n 'or scelta1=='N ':
