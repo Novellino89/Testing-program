@@ -74,7 +74,7 @@ def calcola_risultato(tiro):
             break
    return vincente,somma
 
-def Visualizza_Ottenuto(vincente,avversario)
+def Visualizza_Ottenuto(vincente,avversario):
 if vincente==0 and avversario=0:
     print('purtroppo il tuo lancio non vale nulla')
 elif vincente==1 and avversario=0:
