@@ -112,6 +112,7 @@ while True:
         print('Attualmente hai nel portafoglio' , denaro,'Euro')
         print('Il tuo avversario ha nel portafoglio',denaroa,'Euro')
     else:
+        os.system('cls')
         print('Attualmente hai nel portafoglio' , denaro,'Euro')
         print('Il tuo avversario ha nel portafoglio',denaroa,'Euro')
     ripetizione=0
@@ -123,7 +124,7 @@ while True:
     except:
         print('Inserisci o S per giocare ancora o N per uscire \n')
     if scelta=='s' or scelta=='S':
-        os.system('cls')
+
         puntata=input('\n Inserisci quanto vuoi scommettere per questa puntata ')
         puntata=int(puntata)
         denaro-=puntata
