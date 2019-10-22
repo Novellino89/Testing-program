@@ -67,41 +67,41 @@ def calcola_risultato(tiro):
 
 def Visualizza_Ottenuto(vincente,avversario):
     if vincente==0 and avversario==0:
-        print('purtroppo il tuo lancio non vale nulla')
+        print('purtroppo il tuo lancio non vale nulla \n')
     elif vincente==1 and avversario==0:
-        print('Hai ottenuto una coppia')
+        print('Hai ottenuto una coppia\n')
     elif vincente==2 and avversario==0:
-        print('Hai ottenuto una doppia coppia')
+        print('Hai ottenuto una doppia coppia\n')
     elif vincente==3 and avversario==0:
-        print('Hai ottenuto un tris')
+        print('Hai ottenuto un tris\n')
     elif vincente==4 and avversario==0:
-        print('Hai ottenuto una scala di 5')
+        print('Hai ottenuto una scala di 5\n')
     elif vincente==5 and avversario==0:
-        print('Hai ottenuto una scala di 6')
+        print('Hai ottenuto una scala di 6\n')
     elif vincente==6 and avversario==0:
-        print('Hai ottenuto un full')
+        print('Hai ottenuto un full\n')
     elif vincente==7 and avversario==0:
-        print('Hai ottenuto 4 dadi uguali')
+        print('Hai ottenuto 4 dadi uguali\n')
     elif vincente==8 and avversario==0:
-        print('Hai ottenuto 5 dadi uguali, è strabiliante')
+        print('Hai ottenuto 5 dadi uguali, è strabiliante\n')
     elif vincentea==0 and avversario==1:
-        print('Il tuo avversario non ha ottenuto nulla')
+        print('Il tuo avversario non ha ottenuto nulla\n')
     elif vincentea==1 and avversario==1:
-        print('Il tuo avversario ha una coppia')
+        print('Il tuo avversario ha una coppia\n')
     elif vincentea==2 and avversario==1 :
-        print('Il tuo avversario ha una doppia coppia')
+        print('Il tuo avversario ha una doppia coppia\n')
     elif vincentea==3 and avversario==1:
-        print('Il tuo avversario ha un tris')
+        print('Il tuo avversario ha un tris\n')
     elif vincentea==4 and avversario==1:
-        print('Il tuo avversario ha una scala di 5')
+        print('Il tuo avversario ha una scala di 5\n')
     elif vincentea==5 and avversario==1:
-        print('Il tuo avversario ha una scala di 6')
+        print('Il tuo avversario ha una scala di 6\n')
     elif vincentea==6 and avversario==1:
-        print('Il tuo avversario ha un full')
+        print('Il tuo avversario ha un full\n')
     elif vincentea==7 and avversario==1:
-        print('Il tuo avversario ha 4 dadi uguali')
+        print('Il tuo avversario ha 4 dadi uguali\n')
     elif vincentea==8 and avversario==1:
-        print('Il tuo avversario ha 5 dadi uguali, spera nella tua buona stella')
+        print('Il tuo avversario ha 5 dadi uguali, spera nella tua buona stella\n')
 
 #Inizio programma
 while True:
@@ -130,7 +130,7 @@ while True:
                 # taking multiple inputs at a time
             try:
                 sostituisci = [int(x) for x in input("Che dadi vuoi ritirare?: ").split()]
-                print("I dadi che vuoi ritirare sono: ", sostituisci)
+                print("I dadi che vuoi ritirare sono: ", sostituisci,"\n")
             except:
                     print('Inserisci per favore almeno un valore numerico.')
             for item in range(0,len(sostituisci)):
@@ -138,7 +138,7 @@ while True:
                     tiro[tiro.index(sostituisci[item])]=tira()
             print('il tuo nuovo tiro è ' )
             tiro.sort()
-            print(tiro)
+            print(tiro,"\n")
         if scelta1=='n' or scelta1=='N':
             ripetizione=1
         #conteggio valori
@@ -148,22 +148,22 @@ while True:
         for i in range(5):
             tiroa.append(tira())
         tiroa.sort()
-        print('Questo è il tiro del tuo avversario')
-        print(tiroa)
+        print('Questo è il tiro del tuo avversario\n')
+        print(tiroa,"\n")
         #conteggio valori avversario
         vincentea,sommaa=calcola_risultato(tiroa)
         Visualizza_Ottenuto(vincente,1)
         if vincente>vincentea:
-            print('Congratulazioni, hai vinto!')
+            print('Congratulazioni, hai vinto!\n')
         elif vincente<vincentea:
-            print('Peccato, hai perso!')
+            print('Peccato, hai perso!\n')
         else:
             if somma>sommaa:
-                    print('Congratulazioni, hai vinto!')
+                    print('Congratulazioni, hai vinto!\n')
             elif somma<sommaa:
-                    print('Peccato, hai perso!')
+                    print('Peccato, hai perso!\n')
             else:
-                print('Il punteggio è finito in parità, è molto raro ma può capitare. Giocate ancora per spareggiare.')
+                print('Il punteggio è finito in parità, è molto raro ma può capitare. Giocate ancora per spareggiare.\n')
               #aggiungo commento per la sincronizzazione di Github.
     elif scelta=='n' or scelta=='N':
         print('grazie per aver giocato al poker di dadi')
