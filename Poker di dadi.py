@@ -104,6 +104,7 @@ def Visualizza_Ottenuto(vincente,avversario):
     elif vincentea==8 and avversario==1:
         print('Il tuo avversario ha 5 dadi uguali, spera nella tua buona stella\n')
 checkfine=1
+piatto=0
 #Inizio programma
 while True:
     if checkfine==1:
