@@ -136,7 +136,7 @@ while True:
             for item in range(0,len(sostituisci)):
                 if sostituisci[item] in tiro:
                     tiro[tiro.index(sostituisci[item])]=tira()
-            print('il tuo nuovo tiro è ' )
+            print('il tuo nuovo tiro è \n ' )
             tiro.sort()
             print(tiro,"\n")
         if scelta1=='n' or scelta1=='N':
