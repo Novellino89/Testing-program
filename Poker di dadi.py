@@ -138,10 +138,11 @@ while True:
             tiro.sort()
             print(tiro)
         if scelta1=='n' or scelta1=='N':
-
+            ripetizione=1
         #conteggio valori
         vincente,somma=calcola_risultato(tiro)
-        Visualizza_Ottenuto(vincente,0)
+        if ripetizione!=1:
+            Visualizza_Ottenuto(vincente,0)
         for i in range(5):
             tiroa.append(tira())
         tiroa.sort()
