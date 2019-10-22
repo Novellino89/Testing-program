@@ -19,14 +19,12 @@ def calcola_risultato(tiro):
    for i in range(1,7):
       if (tiro.count(i) == 5):
             numero=i
-            #print(numero)
             somma=numero*5
             vincente=8
             return vincente,somma
             break
       if(tiro.count(i) == 4):
             numero=i
-            #print(numero)
             somma=numero*4
             vincente=7
             return vincente,somma
@@ -40,35 +38,29 @@ def calcola_risultato(tiro):
            due+=1
            coppia=i
       if tre==1 and checktris==0:
-           #print('Hai un tris di ' + str(tris))
            checktris=1
            vincente=3
            somma=i*3
       if tre==1 and due==1 and checktris==1:
-          # print('Hai un full')
            somma=(tris*3)+(coppia*2)
            vincente=6
            return vincente,somma
            break
       if due==1 and checkcoppia==0:
-           #print('Hai una coppia di ' +str(coppia))
            checkcoppia=1
            numero=i
            somma=numero*2
            vincente=1
       if due==2 and checkcoppia==1:
-          # print('Hai una doppia coppia')
            somma=somma+(i*2)
            vincente=2
            return vincente,somma
            break
       if (tiro[0]==1 and tiro[1]==2 and tiro[2]==3 and tiro[3]==4 and tiro[4]==5):
-            #print('Hai effettuato una scala di 5!')
             vincente=4
             return vincente,somma
             break
       elif (tiro[0]==2 and tiro[1]==3 and tiro[2]==4 and tiro[3]==5 and tiro[4]==6):
-            #print('Hai effettuato una scala di 6!')
             vincente=5
             return vincente,somma
             break
