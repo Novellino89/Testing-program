@@ -103,12 +103,14 @@ def Visualizza_Ottenuto(vincente,avversario):
         print('Il tuo avversario ha 4 dadi uguali\n')
     elif vincentea==8 and avversario==1:
         print('Il tuo avversario ha 5 dadi uguali, spera nella tua buona stella\n')
-
+checkfine=1
 #Inizio programma
 while True:
-    if checkfine==1 and doppiocheck==0:
+    if checkfine==1:
         denaro=300
         denaroa=600
+        print('Attualmente hai nel portafoglio' , denaro,'Euro')
+        print('Il tuo avversario ha nel portafoglio',denaroa,'Euro')
 
     ripetizione=0
     tiroa=[]
