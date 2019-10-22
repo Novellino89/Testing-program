@@ -114,8 +114,6 @@ def Visualizza_Ottenuto(vincente,avversario):
 
 #Inizio programma
 while True:
-    #print (’\n’ * 100)
-    #inizializzazione liste
     tiroa=[]
     tiro=[]
     valore=[]
@@ -146,18 +144,11 @@ while True:
             for item in range(0,len(sostituisci)):
                 if sostituisci[item] in tiro:
                     tiro[tiro.index(sostituisci[item])]=tira()
-
             print('il tuo nuovo tiro è ' )
             print(tiro)
         #conteggio valori
         vincente,somma=calcola_risultato(tiro)
         Visualizza_Ottenuto(vincente,0)
-
-
-
-                #print('che dado vuoi ritirare?')
-            #print('')
-
         for i in range(5):
             tiroa.append(tira())
         tiroa.sort()
