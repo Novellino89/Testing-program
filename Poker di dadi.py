@@ -107,8 +107,8 @@ checkfine=1
 #Inizio programma
 while True:
     if checkfine==1:
-        denaro=300
-        denaroa=600
+        denaro=r.randint(150,400)
+        denaroa=r.randint(250,600)
         print('Attualmente hai nel portafoglio' , denaro,'Euro')
         print('Il tuo avversario ha nel portafoglio',denaroa,'Euro')
     else:
