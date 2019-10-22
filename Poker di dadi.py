@@ -166,7 +166,7 @@ while True:
         #lancio dei dadi e ordinamento
         for i in range(5):
             tiro.append(tira())
-        #tiro.sort()
+        tiro.sort()
         print(tiro,"\n")
         vincente,somma=calcola_risultato(tiro)
         Visualizza_Ottenuto(vincente,0)
@@ -185,7 +185,7 @@ while True:
                 if sostituisci[item] in tiro:
                     tiro[tiro.index(sostituisci[item])]=tira()
             print('il tuo nuovo tiro è \n ' )
-            #tiro.sort()
+            tiro.sort()
             print(tiro,"\n")
         if scelta1=='n' or scelta1=='N' or scelta1=='NO' or scelta1=='no' or scelta1=='n 'or scelta1=='N ':
             ripetizione=1
@@ -195,7 +195,7 @@ while True:
             Visualizza_Ottenuto(vincente,0)
         for i in range(5):
             tiroa.append(tira())
-        #tiroa.sort()
+        tiroa.sort()
         print('Questo è il tiro del tuo avversario\n')
         print(tiroa,"\n")
         #conteggio valori avversario
