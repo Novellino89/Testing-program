@@ -124,9 +124,15 @@ while True:
     except:
         print('Inserisci o S per giocare ancora o N per uscire \n')
     if scelta=='s' or scelta=='S':
+        if denaro<=0:
+            print('Non hai più soldi da scommettere e non possiamo più farti giocare. Ci spiace ma deve abbandonare l"edificio.')
+            break
 
         puntata=input('\n Inserisci quanto vuoi scommettere per questa puntata ')
         puntata=int(puntata)
+        if puntata>denaro:
+            print('Non hai abbastanza soldi')
+            continue
         denaro-=puntata
         casuale=r.randint(1,2)
         if casuale==1:
