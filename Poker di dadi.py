@@ -119,7 +119,7 @@ while True:
         #lancio dei dadi e ordinamento
         for i in range(5):
             tiro.append(tira())
-        tiro.sort()
+        #tiro.sort()
         print(tiro,"\n")
         vincente,somma=calcola_risultato(tiro)
         Visualizza_Ottenuto(vincente,0)
@@ -130,7 +130,7 @@ while True:
         if scelta1=='s' or scelta1=='S' or scelta1=='Si' or scelta1=='S ' or scelta1=='s ':
                 # taking multiple inputs at a time
             try:
-                sostituisci = [int(x) for x in input("\Che dadi vuoi ritirare?: ").split()]
+                sostituisci = [int(x) for x in input("Che dadi vuoi ritirare?: ").split()]
                 print("I dadi che vuoi ritirare sono: ", sostituisci,"\n")
             except:
                     print('Inserisci per favore almeno un valore numerico.')
@@ -138,7 +138,7 @@ while True:
                 if sostituisci[item] in tiro:
                     tiro[tiro.index(sostituisci[item])]=tira()
             print('il tuo nuovo tiro è \n ' )
-            tiro.sort()
+            #tiro.sort()
             print(tiro,"\n")
         if scelta1=='n' or scelta1=='N':
             ripetizione=1
@@ -148,7 +148,7 @@ while True:
             Visualizza_Ottenuto(vincente,0)
         for i in range(5):
             tiroa.append(tira())
-        tiroa.sort()
+        #tiroa.sort()
         print('Questo è il tiro del tuo avversario\n')
         print(tiroa,"\n")
         #conteggio valori avversario
