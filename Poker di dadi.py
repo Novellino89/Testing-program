@@ -129,7 +129,7 @@ while True:
         if scelta1=='s' or scelta1=='S':
                 # taking multiple inputs at a time
             try:
-                sostituisci = [int(x) for x in input("\n Che dadi vuoi ritirare?: ").split()]
+                sostituisci = [int(x) for x in input("\Che dadi vuoi ritirare?: ").split()]
                 print("I dadi che vuoi ritirare sono: ", sostituisci,"\n")
             except:
                     print('Inserisci per favore almeno un valore numerico.')
