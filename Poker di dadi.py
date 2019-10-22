@@ -137,6 +137,8 @@ while True:
             print('il tuo nuovo tiro è ' )
             tiro.sort()
             print(tiro)
+        if scelta1=='n' or scelta1=='N':
+
         #conteggio valori
         vincente,somma=calcola_risultato(tiro)
         Visualizza_Ottenuto(vincente,0)
