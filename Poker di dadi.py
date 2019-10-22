@@ -106,6 +106,10 @@ def Visualizza_Ottenuto(vincente,avversario):
 
 #Inizio programma
 while True:
+    if checkfine==1 and doppiocheck==0:
+        denaro=300
+        denaroa=600
+
     ripetizione=0
     tiroa=[]
     tiro=[]
@@ -116,6 +120,18 @@ while True:
         print('Inserisci o S per giocare ancora o N per uscire \n')
     if scelta=='s' or scelta=='S':
         os.system('cls')
+        puntata=input('\n Inserisci quanto vuoi scommettere per questa puntata ')
+        denaro-=puntata
+        casuale=r.randint(1,2)
+        if casuale==1:
+            print("l'avversario accetta la posta \n")
+            denaroa-=puntata
+            piatto=puntata*2
+        elif casuale==2:
+            puntatasuperiore=r.randint(1,60)
+            print("l'avversario accetta e rilancia di altri", puntatasuperiore)
+            denaroa-=(puntata+puntatasuperiore)
+            piatto=(puntata*2)+puntatasuperiore
         #lancio dei dadi e ordinamento
         for i in range(5):
             tiro.append(tira())
@@ -156,15 +172,31 @@ while True:
         Visualizza_Ottenuto(vincente,1)
         if vincente>vincentea:
             print('Congratulazioni, hai vinto!\n')
+            denaro+=piatto
+            checkfine=0
         elif vincente<vincentea:
             print('Peccato, hai perso!\n')
+            denaroa+=piatto
+            checkfine=0
         else:
             if somma>sommaa:
                     print('Congratulazioni, hai vinto!\n')
+                    denaro+=piatto
+                    checkfine=0
             elif somma<sommaa:
                     print('Peccato, hai perso!\n')
+                    denaroa+=piatto
+                    checkfine=0
             else:
                 print('Il punteggio è finito in parità, è molto raro ma può capitare. Giocate ancora per spareggiare.\n')
+                if casuale==1:
+                    denaro+=piatto
+                    denaroa+=piatto
+                    checkfine=0
+                elif casuale==2:
+                    denaro+=piatto
+                    denaroa+=(piatto+piattosuperiore)
+                    checkfine=0
               #aggiungo commento per la sincronizzazione di Github.
     elif scelta=='n' or scelta=='N':
         print('grazie per aver giocato al poker di dadi')
