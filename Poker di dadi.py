@@ -1,5 +1,6 @@
 import random as r
 import os
+#from Definizione_funzioni import tira,calcola_risultato,Visualizza_Ottenuto
 #creazione funzione tira
 def tira():
     r.seed()
