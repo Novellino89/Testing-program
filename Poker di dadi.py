@@ -128,7 +128,7 @@ while True:
         if denaro<=0:
             print('Non hai più soldi da scommettere e non possiamo più farti giocare. Ci spiace ma deve abbandonare l"edificio.')
             break
-        if denaroa<=0
+        if denaroa<=0:
             print('Hai mandato sul lastrico il tuo avversario! Ma si sta avvicinando un"altra persona al tavolo.')
             denaroa=r.randint(150,600)
             continue
