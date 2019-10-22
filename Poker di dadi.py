@@ -84,23 +84,23 @@ def Visualizza_Ottenuto(vincente,avversario):
     elif vincente==8 and avversario==0:
         print('Hai ottenuto 5 dadi uguali, è strabiliante')
     elif vincentea==0 and avversario==1:
-            print('Il tuo avversario non ha ottenuto nulla')
+        print('Il tuo avversario non ha ottenuto nulla')
     elif vincentea==1 and avversario==1:
-            print('Il tuo avversario ha una coppia')
+        print('Il tuo avversario ha una coppia')
     elif vincentea==2 and avversario==1 :
-            print('Il tuo avversario ha una doppia coppia')
+        print('Il tuo avversario ha una doppia coppia')
     elif vincentea==3 and avversario==1:
-            print('Il tuo avversario ha un tris')
+        print('Il tuo avversario ha un tris')
     elif vincentea==4 and avversario==1:
-            print('Il tuo avversario ha una scala di 5')
+        print('Il tuo avversario ha una scala di 5')
     elif vincentea==5 and avversario==1:
-            print('Il tuo avversario ha una scala di 6')
+        print('Il tuo avversario ha una scala di 6')
     elif vincentea==6 and avversario==1:
-            print('Il tuo avversario ha un full')
+        print('Il tuo avversario ha un full')
     elif vincentea==7 and avversario==1:
-            print('Il tuo avversario ha 4 dadi uguali')
+        print('Il tuo avversario ha 4 dadi uguali')
     elif vincentea==8 and avversario==1:
-            print('Il tuo avversario ha 5 dadi uguali, spera nella tua buona stella')
+        print('Il tuo avversario ha 5 dadi uguali, spera nella tua buona stella')
 
 #Inizio programma
 while True:
