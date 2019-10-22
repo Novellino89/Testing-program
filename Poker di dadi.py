@@ -140,7 +140,7 @@ while True:
             print('il tuo nuovo tiro è \n ' )
             #tiro.sort()
             print(tiro,"\n")
-        if scelta1=='n' or scelta1=='N':
+        if scelta1=='n' or scelta1=='N' or scelta1=='NO' or scelta1=='no' or scelta1=='n 'or scelta1=='N ':
             ripetizione=1
         #conteggio valori
         vincente,somma=calcola_risultato(tiro)
