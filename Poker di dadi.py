@@ -110,7 +110,7 @@ while True:
     tiro=[]
     valore=[]
     try:
-        scelta=input('Vuoi giocare a poker di dadi? S/N \n ')
+        scelta=input('Vuoi giocare a poker di dadi? S/N ')
     except:
         print('Inserisci o S per giocare ancora o N per uscire \n')
     if scelta=='s' or scelta=='S':
@@ -169,5 +169,5 @@ while True:
         print('grazie per aver giocato al poker di dadi')
         break
     else:
-        print('Inserisci o S per giocare ancora o N per uscire')
+        print('Inserisci S per giocare ancora o N per uscire')
         continue
