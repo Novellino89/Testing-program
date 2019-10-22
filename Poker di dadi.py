@@ -148,8 +148,18 @@ while True:
                 print("l'avversario accetta la posta \n")
                 denaroa-=puntata
                 piatto=puntata*2
-        elif casuale==2:
+        elif casuale==2 and denaroa!=0:
             puntatasuperiore=r.randint(1,60)
+            if (puntatasuperiore+puntata)>denaroa:
+                if denaroa<puntata:
+                    print('Il tuo avversario accetta ma ha meno soldi della tua posta, mette tutto quello che ha.')
+                    piatto=puntata+denaroa
+                    denaroa=0
+                elif denaroa>puntata:
+                    print("l'avversario accetta la posta \n")
+                    denaroa-=puntata
+                    piatto=puntata*2
+        else:
             print("l'avversario accetta e rilancia di altri", puntatasuperiore)
             denaroa-=(puntata+puntatasuperiore)
             piatto=(puntata*2)+puntatasuperiore
