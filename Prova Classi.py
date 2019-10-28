@@ -21,6 +21,7 @@ def calcolo_modificatore(numero):
 class PG:
   def __init__(self):
     self.nome=input('Inserisci il nome del tuo eroe: ')
+    self.difesa= 10 + self.mdestrezza
     self.forza = r.randint(2,12)+6
     self.mforza=calcolo_modificatore(self.forza)
     self.costituzione = r.randint(2,12)+6
@@ -36,9 +37,10 @@ class PG:
 
 Gioele=PG()
 print(Gioele.nome)
-print("La tua forza è di ",Gioele.forza,"il modificatore è quindi di ",Gioele.mforza)
-print("La tua costituzione è di ",Gioele.costituzione,"il modificatore è quindi di ",Gioele.mcostituzione)
-print("La tua destrezza è di ",Gioele.destrezza,"il modificatore è quindi di ",Gioele.mdestrezza)
-print("La tua intelligenza è di ",Gioele.intelligenza,"il modificatore è quindi di ",Gioele.mintelligenza)
-print("La tua saggezza è di ",Gioele.saggezza,"il modificatore è quindi di ",Gioele.msaggezza)
-print("Il tuo carisma è di ",Gioele.carisma,"il modificatore è quindi di ",Gioele.mcarisma)
+print("La tua difesa è di "Gioele.difesa)
+print("La tua forza è di",Gioele.forza,"il modificatore è quindi di",Gioele.mforza)
+print("La tua costituzione è di",Gioele.costituzione,"il modificatore è quindi di",Gioele.mcostituzione)
+print("La tua destrezza è di",Gioele.destrezza,"il modificatore è quindi di",Gioele.mdestrezza)
+print("La tua intelligenza è di",Gioele.intelligenza,"il modificatore è quindi di",Gioele.mintelligenza)
+print("La tua saggezza è di",Gioele.saggezza,"il modificatore è quindi di",Gioele.msaggezza)
+print("Il tuo carisma è di",Gioele.carisma,"il modificatore è quindi di",Gioele.mcarisma)
