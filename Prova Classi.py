@@ -22,17 +22,29 @@ class PG:
   def __init__(self):
     self.nome=input('Inserisci il nome del tuo eroe: ')
     self.forza = r.randint(2,12)+6
+    self.mforza=calcolo_modificatore(self.forza)
     self.costituzione = r.randint(2,12)+6
+    self.mcostituzione=calcolo_modificatore(self.costituzione)
     self.destrezza = r.randint(2,12)+6
+    self.mdestrezza=calcolo_modificatore(self.destrezza)
     self.intelligenza = r.randint(2,12)+6
+    self.mintelligenza=calcolo_modificatore(self.intelligenza)
     self.saggezza = r.randint(2,12)+6
+    self.msaggezza=calcolo_modificatore(self.saggezza)
     self.carisma = r.randint(2,12)+6
+    self.mcarisma=calcolo_modificatore(self.carisma)
 
 Gioele=PG()
 print(Gioele.nome)
 print(Gioele.forza)
+print(Gioele.mforza)
 print(Gioele.costituzione)
+print(Gioele.mcostituzione)
 print(Gioele.destrezza)
+print(Gioele.mdestrezza)
 print(Gioele.intelligenza)
+print(Gioele.mintelligenza)
 print(Gioele.saggezza)
+print(Gioele.msaggezza)
 print(Gioele.carisma)
+print(Gioele.mcarisma)
