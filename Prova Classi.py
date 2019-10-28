@@ -21,13 +21,13 @@ def calcolo_modificatore(numero):
 class PG:
   def __init__(self):
     self.nome=input('Inserisci il nome del tuo eroe: ')
-    self.difesa= 10 + self.mdestrezza
     self.forza = r.randint(2,12)+6
     self.mforza=calcolo_modificatore(self.forza)
     self.costituzione = r.randint(2,12)+6
     self.mcostituzione=calcolo_modificatore(self.costituzione)
     self.destrezza = r.randint(2,12)+6
     self.mdestrezza=calcolo_modificatore(self.destrezza)
+    self.difesa= 10 + self.mdestrezza
     self.intelligenza = r.randint(2,12)+6
     self.mintelligenza=calcolo_modificatore(self.intelligenza)
     self.saggezza = r.randint(2,12)+6
