@@ -1,5 +1,5 @@
 import random as r
- def calcolo_modificatore(numero):
+def calcolo_modificatore(numero):
     if numero==8 or numero==9:
         modificatore=-1
         return modificatore
