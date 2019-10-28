@@ -16,7 +16,7 @@ def calcolo_modificatore(numero):
         modificatore=3
         return modificatore
     if numero==18 or numero==19:
-        modificatore=3
+        modificatore=4
         return modificatore
 class PG:
   def __init__(self):
@@ -36,15 +36,9 @@ class PG:
 
 Gioele=PG()
 print(Gioele.nome)
-print(Gioele.forza)
-print(Gioele.mforza)
-print(Gioele.costituzione)
-print(Gioele.mcostituzione)
-print(Gioele.destrezza)
-print(Gioele.mdestrezza)
-print(Gioele.intelligenza)
-print(Gioele.mintelligenza)
-print(Gioele.saggezza)
-print(Gioele.msaggezza)
-print(Gioele.carisma)
-print(Gioele.mcarisma)
+print(Gioele.forza,"il modificatore è quindi di ",Gioele.mforza)
+print(Gioele.costituzione,"il modificatore è quindi di ",Gioele.mcostituzione)
+print(Gioele.destrezza,"il modificatore è quindi di ",Gioele.mdestrezza)
+print(Gioele.intelligenza,"il modificatore è quindi di ",Gioele.mintelligenza)
+print(Gioele.saggezza,"il modificatore è quindi di ",Gioele.msaggezza)
+print(Gioele.carisma,"il modificatore è quindi di ",Gioele.mcarisma)
