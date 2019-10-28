@@ -1,6 +1,7 @@
 import random as r
 class PG:
   def __init__(self):
+    self.nome=input('Inserisci il nome del tuo eroe: ')
     self.forza = r.randint(2,12)+6
     self.costituzione = r.randint(2,12)+6
     self.destrezza = r.randint(2,12)+6
@@ -9,6 +10,7 @@ class PG:
     self.carisma = r.randint(2,12)+6
 
 Gioele=PG()
+print(Gioele.nome)
 print(Gioele.forza)
 print(Gioele.costituzione)
 print(Gioele.destrezza)
