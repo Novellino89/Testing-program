@@ -37,7 +37,7 @@ class PG:
 
 Gioele=PG()
 print(Gioele.nome)
-print("La tua difesa è di "Gioele.difesa)
+print("La tua difesa è di ",Gioele.difesa)
 print("La tua forza è di",Gioele.forza,"il modificatore è quindi di",Gioele.mforza)
 print("La tua costituzione è di",Gioele.costituzione,"il modificatore è quindi di",Gioele.mcostituzione)
 print("La tua destrezza è di",Gioele.destrezza,"il modificatore è quindi di",Gioele.mdestrezza)
